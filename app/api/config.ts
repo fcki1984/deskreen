@@ -7,7 +7,7 @@ let port;
 if (!host && !protocol && !port) {
   host = '127.0.0.1';
   protocol = 'http';
-  port = 3131; // TODO: read port from signaling server api
+  port = 31318; // TODO: read port from signaling server api
 }
 
 export default {
