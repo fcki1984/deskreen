@@ -154,6 +154,18 @@ globally on your machine.
 2. `cd app/client; yarn install --frozen-lockfile ; cd ../../ ; yarn install --frozen-lockfile`
 3. `yarn dev` -- run in dev mode with live updates
 
+### build win
+```sudo apt update
+# depend
+sudo apt install wine64
+#Temporary environment variable
+export NODE_OPTIONS=--openssl-legacy-provider
+# In order to avoid the Win11 system retaining port, the Deskreen client port is changed to 31118
+git clone https://github.com/fcki1984/deskreen.git
+cd deskreen
+cd app/client; yarn install --frozen-lockfile ; cd ../../ ; yarn install --frozen-lockfile
+yarn package --win
+```
 ### Useful yarn commands
 
 `yarn start` -- run in production mode to test, without packaging
