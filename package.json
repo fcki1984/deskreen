@@ -103,6 +103,7 @@
         "msi",
         "portable"
       ]
+    "defaultArch": "x64"
     },
     "portable": {
       "artifactName": "${name}_${version}_Windows_portable.exe"
